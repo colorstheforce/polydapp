@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x5d2a71162bbfe108584ba211a083139d9a85b752",
+  "SCAN_LINK": "https://polygonscan.com/token/0x5d2a71162bbfe108584ba211a083139d9a85b752",
+  "NETWORK": {
+    "NAME": "Polygon",
+    "SYMBOL": "Matic",
+    "ID": 137
+  },
+  "NFT_NAME": "PolyDAO",
+  "SYMBOL": "PDAO",
+  "MAX_SUPPLY": 4444,
+  "WEI_COST": 12000000000000000000,
+  "DISPLAY_COST": 12,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/polydao-official",
+  "SHOW_BACKGROUND": true
+}
