@@ -125,6 +125,7 @@ function App() {
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
+    let baseFee = String(33000000000);
     console.log("Cost: ", totalCostWei);
     console.log("Gas limit: ", totalGasLimit);
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
@@ -133,6 +134,8 @@ function App() {
       .mint(blockchain.account, mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
+      maxFeePerGas: baseFee,
+      maxPriorityFeePerGas: baseFee,
         to: CONFIG.CONTRACT_ADDRESS,
         from: blockchain.account,
         value: totalCostWei,
